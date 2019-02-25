@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+:root {
+  --revolutionary-red: red;
+  --workers-yellow: yellow;
+  --peasants-grey: grey;
+  --peasants-gray: grey;
+  --miners-black: black;
+  --mao-white: white;
+  --soldiers-brown: #fce5cdff;
+
+  --container-width: 960px;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: auto;
+}
