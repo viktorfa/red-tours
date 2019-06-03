@@ -142,6 +142,7 @@ query Trips {
         price
         duration
         chineseName
+        path
       }
     }
   }

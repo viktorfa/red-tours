@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="footer-grid container">
-      <p class="footer-logo">Røde reiser</p>
+      <g-link to="/">
+        <p class="footer-logo">Røde reiser</p>
+      </g-link>
       <br>
       <div class="footer-links">
         <p>Ofte stilte spørsmål</p>

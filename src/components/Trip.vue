@@ -4,7 +4,9 @@
 
     <div class="trip-intro">
       <div class="trip-intro-text-column">
-        <h1 class="trip-header">{{trip.title}}</h1>
+        <g-link :to="`${trip.path}#itinerary`">
+          <h1 class="trip-header">{{trip.title}}</h1>
+        </g-link>
         <p class="trip-subheader">{{trip.subheader}}</p>
       </div>
       <div class="trip-intro-image-column">
@@ -14,28 +16,17 @@
     <div class="container">
       <div class="trip-content">
         <div v-html="excerpt" class="trip-excerpt"></div>
-        <div class="trip-info">
-          <p>{{trip.price}},-</p>
-          <p>{{trip.duration}} dager</p>
-          <p>
-            <span>ideologi</span>
-            <StarRating :stars="trip.ideology"/>
-          </p>
-          <p>
-            <span>revisjonisme</span>
-            <StarRating :stars="trip.revisionism"/>
-          </p>
-        </div>
+        <TripInfo :trip="trip"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import StarRating from "@/components/StarRating";
+import TripInfo from "@/components/TripInfo";
 export default {
   components: {
-    StarRating
+    TripInfo
   },
   props: {
     trip: Object
@@ -96,13 +87,6 @@ query MetaData {metaData {pathPrefix}}
   max-width: 100%;
   width: auto;
 }
-
-.trip-info {
-  font-size: 1.6rem;
-  color: var(--peasants-grey);
-  text-align: right;
-}
-.trip-info p,
 .trip-excerpt p {
   margin-top: 0;
 }
@@ -110,7 +94,11 @@ query MetaData {metaData {pathPrefix}}
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 768px) {
+.trip-info {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
   .trip-intro {
     display: block;
     text-align: center;
@@ -124,15 +112,11 @@ query MetaData {metaData {pathPrefix}}
   .trip-content {
     display: block;
   }
-  .trip-info {
-    text-align: center;
-  }
-  .trip-info p {
-    display: inline-block;
-    margin: 0 1rem;
-  }
   .trip-excerpt {
     font-size: 1rem;
+  }
+  .trip-info {
+    text-align: center;
   }
   h1,
   p {

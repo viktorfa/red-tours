@@ -6,8 +6,8 @@ misc: ['28 888,-', '15 dager', 'lite revisjonisme']
 ideology: 3
 revisionism: 1
 price: 28888
-duration: 15 
-chineseName: "东方红"
+duration: 15
+chineseName: '东方红'
 order: 888
 ---
 
