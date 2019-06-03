@@ -2,6 +2,7 @@
 title: 'Østen er rød'
 subheader: 'Vår mest populære tur som tar deg med på en inspirerende reise til de viktigste stedene i Folkerepublikkens historie.'
 imageUrl: 'white-mao-in-wheat.jpg'
+image: '../static/images/white-mao-in-wheat.jpg'
 misc: ['28 888,-', '15 dager', 'lite revisjonisme']
 ideology: 3
 revisionism: 1

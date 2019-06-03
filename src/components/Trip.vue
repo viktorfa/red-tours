@@ -1,12 +1,14 @@
 <template>
   <div class="trip">
+    <h1 class="trip-banner">{{trip.chineseName}}</h1>
+
     <div class="trip-intro">
-      <div>
+      <div class="trip-intro-text-column">
         <h1 style>{{trip.title}}</h1>
         <p>{{trip.subheader}}</p>
       </div>
-      <div>
-        <g-image :src="`/images/${trip.imageUrl}`" class="trip-intro-image"/>
+      <div class="trip-intro-image-column">
+        <g-image :src="trip.image" class="trip-intro-image"/>
       </div>
     </div>
     <div class="container">
@@ -26,7 +28,6 @@
         </div>
       </div>
     </div>
-    <h1 class="trip-undertext">{{trip.chineseName}}</h1>
   </div>
 </template>
 
@@ -47,11 +48,18 @@ export default {
 };
 </script>
 
+<static-query>
+query MetaData {metaData {pathPrefix}}
+</static-query>
+
 <style>
-.trip-undertext {
+.trip-banner {
   font-size: 4rem;
   color: var(--revolutionary-red);
   text-align: center;
+  background-color: var(--soldiers-brown);
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 .trip {
   min-height: 100vh;
@@ -59,7 +67,12 @@ export default {
 .trip-intro {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.trip-intro-text-column {
   text-align: right;
+}
+.trip-intro-image-column {
+  text-align: left;
 }
 .trip-content {
   display: grid;
@@ -81,6 +94,7 @@ export default {
 .trip-intro-image {
   max-height: 75vh;
   max-width: 100%;
+  width: auto;
 }
 
 .trip-info {

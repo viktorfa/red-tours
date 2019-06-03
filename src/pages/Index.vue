@@ -39,9 +39,6 @@ export default {
     Testimonial,
     Trip
   },
-  metaInfo: {
-    title: "Hello, world!"
-  }
 };
 </script>
 
@@ -57,6 +54,9 @@ export default {
 @media screen and (max-width: 768px) {
   .testimonial-list {
     font-size: 1rem;
+  }
+  #mao-mimeograph-image {
+    margin-left: -160px;
   }
 }
 .testimonial-list > div {
@@ -74,8 +74,8 @@ export default {
 }
 
 .full-page-image {
-  height: 100vh;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -126,7 +126,7 @@ query Trips {
         title
         subheader
         content
-        imageUrl
+        image
         misc
         revisionism
         ideology

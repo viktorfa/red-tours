@@ -2,6 +2,7 @@
 title: 'Den tredje fronten'
 subheader: 'Mao flyttet strategisk industri til Kinas mystiske indre – den fortryllende regionen oppavlet flere revolusjonære helter og opplever et nytt løft idag'
 imageUrl: 'third-front-poster.jpg'
+image: '../static/images/third-front-poster.jpg'
 misc: ['31 888,-', '21 dager', 'lite ideologi']
 ideology: 1
 revisionism: 1

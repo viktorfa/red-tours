@@ -2,6 +2,7 @@
 title: '100 år med revolusjon'
 subheader: 'En reise med fokus på revolusjonære bevegelser i Kina fra Xinhai-opprøret til Xi Jinping'
 imageUrl: 'right-to-rebel-cr-poster.jpeg'
+image: '../static/images/right-to-rebel-cr-poster.jpeg'
 misc: ['33 888,-', '19 dager', 'mye revisjonisme']
 ideology: 3
 revisionism: 3

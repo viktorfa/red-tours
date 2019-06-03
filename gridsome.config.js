@@ -5,7 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Røde reiser',
+  siteDescription: 'Reisebyrå og din ledsager til revolusjonære Kina.',
+  pathPrefix: process.env.PATH_PREFIX,
+  titleTemplate: '%s',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
