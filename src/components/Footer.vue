@@ -26,6 +26,7 @@ footer {
   background-color: var(--revolutionary-red);
   color: var(--workers-yellow);
   padding-top: 10vh;
+  padding-bottom: 10vh;
   min-height: 20vh;
   text-align: center;
   font-size: 1.4rem;

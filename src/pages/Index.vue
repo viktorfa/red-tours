@@ -57,6 +57,15 @@ export default {
 .testimonial-section {
   background-image: url(../../static/images/mao-calligraphy_cropped.jpg);
 }
+
+@media screen and (min-width: 767px) {
+  .index-header > * {
+    margin-left: 1rem;
+  }
+  .index-header {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .testimonial-list {
     font-size: 1rem;
@@ -66,13 +75,10 @@ export default {
   }
 }
 .testimonial-list > div {
-  padding: 16px;
+  padding: 1rem;
 }
 .testimonial-list p {
   margin: 0;
-}
-.home-links a {
-  margin-right: 1rem;
 }
 .index-section {
   min-height: 100vh;
@@ -91,15 +97,12 @@ export default {
 .index-header {
   color: var(--workers-yellow);
   background-color: var(--revolutionary-red);
-  font-size: 2rem;
   position: absolute;
   bottom: 0;
   left: 0;
+  font-size: 1.6rem;
   width: 100%;
   font-family: "Oswald", sans-serif;
-}
-.index-header > * {
-  margin-left: 1rem;
 }
 
 .index-down-header {

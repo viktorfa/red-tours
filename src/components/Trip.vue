@@ -4,8 +4,8 @@
 
     <div class="trip-intro">
       <div class="trip-intro-text-column">
-        <h1 style>{{trip.title}}</h1>
-        <p>{{trip.subheader}}</p>
+        <h1 class="trip-header">{{trip.title}}</h1>
+        <p class="trip-subheader">{{trip.subheader}}</p>
       </div>
       <div class="trip-intro-image-column">
         <g-image :src="trip.image" class="trip-intro-image"/>
@@ -79,7 +79,7 @@ query MetaData {metaData {pathPrefix}}
   grid-template-columns: 3fr 1fr;
 }
 
-.trip-intro h1 {
+.trip-intro > h1 {
   font-size: 4rem;
   font-family: "Oswald";
 }
@@ -115,9 +115,14 @@ query MetaData {metaData {pathPrefix}}
     display: block;
     text-align: center;
   }
+  .trip-intro-text-column {
+    text-align: center;
+  }
+  .trip-intro > h1 {
+    font-size: 1.4rem;
+  }
   .trip-content {
     display: block;
-    margin: 1rem;
   }
   .trip-info {
     text-align: center;

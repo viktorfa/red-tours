@@ -10,9 +10,16 @@
   --soldiers-brown: #fce5cdff;
 
   --container-width: 960px;
+  --container-mobile-margin: 12px;
 }
 
 .container {
   max-width: var(--container-width);
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 0 var(--container-mobile-margin);
+  }
 }
