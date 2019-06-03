@@ -1,14 +1,14 @@
 ---
 title: 'Østen er rød'
-subheader: 'Vår mest populære tur som tar deg med på en inspirerende reise til de viktigste stedene i Folkerepublikkens historie.'
-imageUrl: 'white-mao-in-wheat.jpg'
-image: '../static/images/white-mao-in-wheat.jpg'
+subheader: 'Vår mest populære tur som tar deg med på en inspirerende reise til de viktigste stedene i Folkerepublikkens historie'
+image: './white-mao-in-wheat.jpg'
 misc: ['28 888,-', '15 dager', 'lite revisjonisme']
 ideology: 3
 revisionism: 1
 price: 28888
 duration: 15 
 chineseName: "东方红"
+order: 888
 ---
 
 Turen begynner i supermetropolet Shanghai der vi blant annet får en innføring i de viktigste tesene i Kinaspesifikk sosialisme under seminar ved Fudan-universitetet med samfunnsviter og ideolog Sun Hujun. I tillegg til revolusjonære helters barndomshjem, besøker vi også en fabrikk i en de massive industriparkene i byens forsteder, der vi får se proletariatets forhold i en moderne sosialistisk stat.

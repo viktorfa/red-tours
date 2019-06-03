@@ -1,14 +1,14 @@
 ---
 title: '100 år med revolusjon'
 subheader: 'En reise med fokus på revolusjonære bevegelser i Kina fra Xinhai-opprøret til Xi Jinping'
-imageUrl: 'right-to-rebel-cr-poster.jpeg'
-image: '../static/images/right-to-rebel-cr-poster.jpeg'
+image: './right-to-rebel-cr-poster.jpeg'
 misc: ['33 888,-', '19 dager', 'mye revisjonisme']
 ideology: 3
 revisionism: 3
 price: 33888
 duration: 19 
 chineseName: "百年革命"
+order: 8
 ---
 
 Reisen begynner i Guangzhou hvor vi får omvisning på Sun Yat-Sen universitetet av historiker Hua Lin. Hun forteller om byens historie som internasjonal handelshavn og kruttpotte for opiumskriger og tidlige revolusjonære tilstrømninger, til nådagens forsøkslab for ny politikk i Kinaspesifikk sosialisme. Vi vil arrangere tur til en nærliggende fabrikk der vi får et innblikk i arbeidernes kår etter 70 år med sosialisme.
