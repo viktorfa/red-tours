@@ -17,12 +17,15 @@
         <Trip v-for="edge in $page.trips.edges" :key="edge.node.id" :trip="edge.node"/>
       </div>
     </div>
-    <div class="testimonial-list">
-      <Testimonial
-        v-for="(testimonial, i) in $page.testimonials.edges[0].node.data"
-        :key="i"
-        :testimonial="testimonial"
-      />
+
+    <div class="testimonial-section">
+      <div class="testimonial-list">
+        <Testimonial
+          v-for="(testimonial, i) in $page.testimonials.edges[0].node.data"
+          :key="i"
+          :testimonial="testimonial"
+        />
+      </div>
     </div>
 
     <Footer/>
@@ -38,7 +41,7 @@ export default {
     Footer,
     Testimonial,
     Trip
-  },
+  }
 };
 </script>
 
@@ -50,6 +53,9 @@ export default {
   background-color: var(--soldiers-brown);
   max-width: 512px;
   margin: 0 auto;
+}
+.testimonial-section {
+  background-image: url(../../static/images/mao-calligraphy_cropped.jpg);
 }
 @media screen and (max-width: 768px) {
   .testimonial-list {
