@@ -11,7 +11,7 @@
         class="full-page-image"
       />
     </div>
-    <div class="half-page-space"></div>
+    <div class="spacer" style="height: 25vh;"></div>
     <div class="index-section no-image">
       <div>
         <Trip v-for="edge in $page.trips.edges" :key="edge.node.id" :trip="edge.node"/>

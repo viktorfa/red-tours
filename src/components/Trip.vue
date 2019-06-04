@@ -15,7 +15,10 @@
     </div>
     <div class="container">
       <div class="trip-content">
-        <div v-html="excerpt" class="trip-excerpt"></div>
+        <div>
+          <div v-html="excerpt" class="trip-excerpt"></div>
+          <g-link class="see-more-link" :to="`${trip.path}#itinerary`">Se mer</g-link>
+        </div>
         <TripInfo :trip="trip"/>
       </div>
     </div>
@@ -70,6 +73,12 @@ query MetaData {metaData {pathPrefix}}
   grid-template-columns: 3fr 1fr;
 }
 
+.see-more-link {
+  color: var(--revolutionary-red) !important;
+  font-size: 1.4rem;
+  font-family: "Oswald", serif;
+}
+
 .trip-intro > h1 {
   font-size: 4rem;
   font-family: "Oswald";
@@ -87,8 +96,8 @@ query MetaData {metaData {pathPrefix}}
   max-width: 100%;
   width: auto;
 }
-.trip-excerpt p {
-  margin-top: 0;
+.trip-excerpt > p {
+  margin: 0;
 }
 .trip-excerpt {
   font-size: 1.2rem;
@@ -116,6 +125,9 @@ query MetaData {metaData {pathPrefix}}
     font-size: 1rem;
   }
   .trip-info {
+    text-align: center;
+  }
+  .trip-intro-image-column {
     text-align: center;
   }
   h1,
