@@ -1,3 +1,5 @@
+[Visit demo](https://viktorfa.github.io/red-tours/ "Red Tours demo site")
+
 # Default starter for Gridsome
 `
 ### 1. Install Gridsome CLI tool if you don't have
